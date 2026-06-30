@@ -1,0 +1,23 @@
+{
+  "name": "Ignite & Bliss",
+  "short_name": "Ignite & Bliss",
+  "description": "Premium handmade luxury candles crafted with love. Discover warmth, serenity, and timeless beauty.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFBF8",
+  "theme_color": "#6F4E37",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "lang": "en-IN"
+}

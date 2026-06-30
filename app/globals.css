@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────
+   GLOBAL RESET & BASE
+───────────────────────────────────────────────────── */
+:root {
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-inter: "Inter", system-ui, sans-serif;
+  --color-bg: #fffbf8;
+  --color-primary: #6f4e37;
+  --color-accent: #c79a63;
+  --color-border: #eee7df;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #222222;
+  font-family: var(--font-inter);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ─────────────────────────────────────────────────────
+   CUSTOM SCROLLBAR (Desktop)
+───────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fffbf8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c79a63;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6f4e37;
+}
+
+/* ─────────────────────────────────────────────────────
+   TYPOGRAPHY — LUXURY HEADING STYLES
+───────────────────────────────────────────────────── */
+.heading-display {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #222222;
+}
+
+.heading-section {
+  font-family: var(--font-playfair);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-inter);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c79a63;
+}
+
+/* ─────────────────────────────────────────────────────
+   LUXURY BUTTON STYLES
+───────────────────────────────────────────────────── */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full transition-all duration-300;
+  background: linear-gradient(135deg, #6f4e37 0%, #8b6347 100%);
+  box-shadow: 0 4px 20px rgba(111, 78, 55, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-family: var(--font-inter);
+  letter-spacing: 0.02em;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 30px rgba(111, 78, 55, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #7d5840 0%, #9a7055 100%);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-all duration-300;
+  background: transparent;
+  border: 1.5px solid #6f4e37;
+  color: #6f4e37;
+  font-family: var(--font-inter);
+  letter-spacing: 0.02em;
+}
+
+.btn-secondary:hover {
+  background: #6f4e37;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(111, 78, 55, 0.25);
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-full transition-all duration-300;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+}
+
+.btn-instagram {
+  @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-full transition-all duration-300;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.btn-instagram:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(220, 39, 67, 0.45);
+}
+
+/* ─────────────────────────────────────────────────────
+   GLASS MORPHISM
+───────────────────────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-dark {
+  background: rgba(34, 22, 14, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ─────────────────────────────────────────────────────
+   SECTION CONTAINERS
+───────────────────────────────────────────────────── */
+.section-padding {
+  @apply py-20 md:py-28 lg:py-32;
+}
+
+.container-luxury {
+  @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-12;
+}
+
+/* ─────────────────────────────────────────────────────
+   SECTION DIVIDER ACCENT LINE
+───────────────────────────────────────────────────── */
+.accent-line {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, #c79a63, #6f4e37);
+  border-radius: 1px;
+}
+
+/* ─────────────────────────────────────────────────────
+   PRODUCT CARD
+───────────────────────────────────────────────────── */
+.product-card {
+  @apply relative overflow-hidden rounded-2xl cursor-pointer;
+  background: #ffffff;
+  box-shadow: 0 2px 20px rgba(111, 78, 55, 0.08);
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 40px rgba(111, 78, 55, 0.18);
+  transform: translateY(-4px);
+}
+
+.product-card-image {
+  @apply relative overflow-hidden;
+  aspect-ratio: 4 / 5;
+}
+
+.product-card-image img {
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-card-image img {
+  transform: scale(1.07);
+}
+
+/* ─────────────────────────────────────────────────────
+   MODAL OVERLAY
+───────────────────────────────────────────────────── */
+.modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center p-4;
+  background: rgba(34, 22, 14, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* ─────────────────────────────────────────────────────
+   MASONRY GALLERY
+───────────────────────────────────────────────────── */
+.masonry-grid {
+  columns: 2;
+  column-gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    columns: 3;
+    column-gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    columns: 4;
+    column-gap: 20px;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 640px) {
+  .masonry-item {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   STAR RATING
+───────────────────────────────────────────────────── */
+.star-rating {
+  color: #c79a63;
+  letter-spacing: 2px;
+}
+
+/* ─────────────────────────────────────────────────────
+   SELECTION STYLE
+───────────────────────────────────────────────────── */
+::selection {
+  background: #c79a63;
+  color: white;
+}
+
+/* ─────────────────────────────────────────────────────
+   FOCUS STYLES
+───────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #c79a63;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────────────────
+   SMOOTH IMAGE LOADING
+───────────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+}

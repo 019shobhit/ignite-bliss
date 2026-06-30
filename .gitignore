@@ -1,0 +1,58 @@
+# Ignite & Bliss – Luxury Candle Showcase Website
+# Next.js 15 + TypeScript + Tailwind CSS + Framer Motion
+
+# ── Dependencies ────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Next.js ─────────────────────────────────────────
+.next/
+out/
+
+# ── Build ────────────────────────────────────────────
+/build
+
+# ── Environment ──────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── Logs ─────────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Editor ───────────────────────────────────────────
+.DS_Store
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+
+# ── TypeScript ────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Databases & Storage ────────────────────────────────
+*.db
+*.sqlite
+*.sqlite-journal
+*.sqlite3
+
+# ── Certificates & Keys ───────────────────────────────
+*.pem
+*.key
+*.pfx
+*.cer
+*.crt
+*.der
+*.p12
+
+# ── Deployments & Caches ──────────────────────────────
+.vercel/
+.turbo/
+.eslintcache
+.stylelintcache
