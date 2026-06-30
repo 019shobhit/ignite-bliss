@@ -36,12 +36,6 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 
-# ── Databases & Storage ────────────────────────────────
-*.db
-*.sqlite
-*.sqlite-journal
-*.sqlite3
-
 # ── Certificates & Keys ───────────────────────────────
 *.pem
 *.key
