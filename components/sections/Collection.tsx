@@ -106,6 +106,15 @@ function ProductCard({
           </span>
         </div>
 
+        {/* MOQ if present */}
+        {(product.moq || product.moqLabel) && (
+          <div className="mb-2">
+            <span className="text-[9px] font-inter font-600 uppercase tracking-wider text-brand-accent bg-brand-accent/10 px-2 py-0.5 rounded-md">
+              Min. Order: {product.moq ? `${product.moq} units` : product.moqLabel}
+            </span>
+          </div>
+        )}
+
         <p className="text-xs text-brand-lightText leading-relaxed mb-4 line-clamp-2">
           {product.description}
         </p>

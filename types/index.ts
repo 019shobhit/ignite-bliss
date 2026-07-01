@@ -12,6 +12,10 @@ export interface Product {
   category: ProductCategory;
   /** Optional longer description for modal display */
   longDescription?: string;
+  /** Optional Minimum Order Quantity */
+  moq?: number;
+  /** Optional Custom MOQ Label */
+  moqLabel?: string;
 }
 
 export type ProductCategory =

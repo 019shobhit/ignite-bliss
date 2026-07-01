@@ -148,6 +148,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                     { label: "Material", value: "Premium Wax" },
                     { label: "Wick", value: "Natural Cotton" },
                     { label: "Craft", value: "Hand-Poured" },
+                    ...(product.moq ? [{ label: "Min. Order", value: `${product.moq} units` }] : []),
+                    ...(product.moqLabel ? [{ label: "Min. Order", value: product.moqLabel }] : []),
                   ].map((detail) => (
                     <div key={detail.label} className="flex flex-col">
                       <span className="text-[10px] uppercase tracking-wider text-brand-lightText font-inter font-600">

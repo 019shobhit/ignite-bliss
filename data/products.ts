@@ -15,7 +15,7 @@ export const products: Product[] = [
   {
     id: "p01",
     name: "Ocean Bliss Candle",
-    price: 349,
+    price: 400,
     description: "A serene aqua-hued gel candle evoking the depth of the ocean.",
     longDescription:
       "Dive into tranquility with our Ocean Bliss Candle — a stunning piece of art crafted from premium clear gel, layered with oceanic blues and soft sandy tones. Hand-poured with precision, this candle fills your space with a fresh, calming marine fragrance.",
@@ -25,8 +25,8 @@ export const products: Product[] = [
   },
   {
     id: "p02",
-    name: "Strawberry Sundae",
-    price: 299,
+    name: "Strawberry Sundae Glass Candle",
+    price: 350,
     description: "A delightful dessert-inspired candle that looks good enough to eat.",
     longDescription:
       "Our Strawberry Sundae candle is a masterpiece of handcrafted artistry — sculpted to perfection with luscious red tones and creamy textures. A sweet, fruity fragrance that transforms any space into a joyful retreat.",
@@ -36,8 +36,8 @@ export const products: Product[] = [
   },
   {
     id: "p03",
-    name: "Biscuit Chai Brew",
-    price: 399,
+    name: "Biscuit Chai Brew Candle",
+    price: 300,
     description: "Warm, spiced, and utterly comforting — pure golden warmth in a jar.",
     longDescription:
       "Inspired by the ritual of morning chai, this beautifully hand-poured candle radiates warmth and homeliness. A comforting blend of spiced tea and buttery biscuit fragrance that wraps your room in pure comfort.",
@@ -47,8 +47,8 @@ export const products: Product[] = [
   },
   {
     id: "p04",
-    name: "Blueberry Sundae",
-    price: 299,
+    name: "Blueberry Sundae Glass Candle",
+    price: 350,
     description: "A whimsical, indulgent candle sculpted with rich blueberry hues.",
     longDescription:
       "The Blueberry Sundae candle is a stunning visual treat — handcrafted with layers of deep violet and creamy white. A sweet, berry-forward fragrance that brings a cheerful, uplifting energy to any room.",
@@ -58,8 +58,8 @@ export const products: Product[] = [
   },
   {
     id: "p05",
-    name: "Spring Bloom Bouquet",
-    price: 449,
+    name: "Spring Bloom Candle Bunch",
+    price: 150,
     description: "A blooming cluster of floral candles — a garden captured in wax.",
     longDescription:
       "Inspired by spring's first bloom, this artisanal candle bouquet features delicately shaped floral forms in soft blush and cream tones. A gentle floral fragrance that transforms any corner into a sanctuary.",
@@ -70,7 +70,7 @@ export const products: Product[] = [
   {
     id: "p06",
     name: "Heart Glow",
-    price: 249,
+    price: 150,
     description: "A romantic heart-shaped candle, perfect for gifting with love.",
     longDescription:
       "Crafted with care and intention, the Heart Glow candle is the ultimate expression of love. Shaped into a perfect heart with a warm rose-scented fragrance, this is the ideal gift for anniversaries and romantic evenings.",
@@ -81,7 +81,7 @@ export const products: Product[] = [
   {
     id: "p07",
     name: "Ocean Layers Glass",
-    price: 379,
+    price: 499,
     description: "Mesmerizing layered ocean hues in a sophisticated glass vessel.",
     longDescription:
       "A truly captivating piece — the Ocean Layers Glass candle showcases meticulously poured strata of ocean-inspired blues, greens, and sandy gold. A fresh aquatic fragrance completes this work of art.",
@@ -92,7 +92,7 @@ export const products: Product[] = [
   {
     id: "p08",
     name: "Strawberry Cream Jar",
-    price: 329,
+    price: 450,
     description: "A luxurious cream-topped strawberry dessert candle in a keepsake jar.",
     longDescription:
       "The Strawberry Cream Jar is a premium handcrafted candle that doubles as a beautiful keepsake. The luscious strawberry and cream fragrance lingers long after the flame is extinguished.",
@@ -103,7 +103,8 @@ export const products: Product[] = [
   {
     id: "p09",
     name: "Green Tea Parfait",
-    price: 349,
+    price: 120,
+    moq: 5,
     description: "A sophisticated matcha-inspired candle with a refreshing green fragrance.",
     longDescription:
       "For the connoisseur of refined tastes, our Green Tea Parfait candle captures the serene essence of a Japanese tea ceremony. Layers of earthy green and creamy white make this as beautiful to look at as it is to burn.",
@@ -113,33 +114,35 @@ export const products: Product[] = [
   },
   {
     id: "p10",
-    name: "Sunrise Bliss Mini",
-    price: 199,
+    name: "Sunrise Bliss Mini jar",
+    price: 99,
+    moq: 20,
     description: "A petite, perfectly crafted morning-glow candle for everyday luxury.",
     longDescription:
-      "Small in size but grand in character, the Sunrise Bliss Mini brings the warmth of a golden morning into your daily ritual. A gentle citrus-floral blend that gently awakens your senses.",
+      "Small in size but grand in character, the Sunrise Bliss Mini jar brings the warmth of a golden morning into your daily ritual. A gentle citrus-floral blend that gently awakens your senses.",
     image: "/images/sunrise-bliss-mini-jar.jpg",
     featured: false,
     category: "glass-candles",
   },
   {
     id: "p11",
-    name: "Together Forever Set",
-    price: 499,
-    description: "A romantic companion set — two candles crafted to glow side by side.",
+    name: "Together Forever Teddy Candle",
+    price: 300,
+    description: "Double the hearts, double the love",
     longDescription:
-      "The Together Forever Set is our most romantic offering — two complementary candles designed to be gifted and lit together. Perfect for anniversaries, weddings, and declarations of love.",
-    image: "/images/together-forever.jpg",
+      "The Together Forever Teddy Candle is our most romantic offering — two complementary candles designed to be gifted and lit together. Perfect for anniversaries, weddings, and declarations of love.",
+    image: "/images/together-forever-teddy.jpg",
     featured: false,
     category: "gift-sets",
   },
   {
     id: "p12",
-    name: "Frosty Beer Glass",
-    price: 399,
+    name: "Frosty Beer Glass Candle",
+    price: 120,
+    moq: 5,
     description: "A novelty glass candle with witty charm and a clean crisp fragrance.",
     longDescription:
-      "A delightful conversation starter — the Frosty Beer Glass candle is crafted to resemble a frosted glass of beer with remarkable detail. A fresh, clean fragrance with subtle herbal notes.",
+      "A delightful conversation starter — the Frosty Beer Glass Candle is crafted to resemble a frosted glass of beer with remarkable detail. A fresh, clean fragrance with subtle herbal notes.",
     image: "/images/frosty-beer-glass.jpg",
     featured: false,
     category: "glass-candles",
@@ -147,7 +150,7 @@ export const products: Product[] = [
   {
     id: "p13",
     name: "Cuddle Bud Gift Box",
-    price: 499,
+    price: 279,
     description: "A premium luxury gift set combining a candle with a plush companion.",
     longDescription:
       "The Cuddle Bud Gift Box is our most beloved gifting option — a handcrafted candle paired with a soft plush bear, presented in an elegant gift box that requires no additional wrapping.",
@@ -158,7 +161,8 @@ export const products: Product[] = [
   {
     id: "p14",
     name: "Mini Teddy Bear",
-    price: 249,
+    price: 20,
+    moq: 15,
     description: "An adorable bear-shaped candle that melts hearts before it melts wax.",
     longDescription:
       "Sculpted with intricate detail, the Mini Teddy Bear candle is one of our most charming creations. A sweet vanilla fragrance makes this the perfect addition to a child's room or a playful gift.",
@@ -168,67 +172,69 @@ export const products: Product[] = [
   },
   {
     id: "p15",
-    name: "Botanical Aura",
-    price: 299,
+    name: "Botanical Aroma Tag",
+    price: 120,
+    moqLabel: "5 units (₹99 each)",
     description: "Nature-inspired artisanal candle with botanical fragrance and elegant form.",
     longDescription:
-      "The Botanical Aura candle celebrates the beauty of the natural world. Infused with a layered botanical fragrance of herbs, florals, and earthy woods, this candle brings the outdoors into your living space.",
+      "The Botanical Aroma Tag candle celebrates the beauty of the natural world. Infused with a layered botanical fragrance of herbs, florals, and earthy woods, this candle brings the outdoors into your living space.",
     image: "/images/botanical-aroma-tag.jpg",
     featured: false,
     category: "decor-candles",
   },
   {
     id: "p16",
-    name: "Golden Aura",
-    price: 349,
-    description: "A sophisticated luxury candle radiating warm golden tones.",
+    name: "Simple Diya Pack of 8",
+    price: 89,
+    description: "A set of eight traditional handcrafted earthen diyas, perfect for festive illumination.",
     longDescription:
-      "The Golden Aura is our signature luxury offering — a richly hued, hand-poured candle that exudes warmth and opulence. A complex amber and sandalwood fragrance that lingers long after the flame is gone.",
-    image: "/images/Candle_01.jpg",
+      "Bring warm, timeless festive glow into your home with our Simple Diya Pack of 8. Handcrafted from natural clay, these traditional diyas offer a clean, steady burn to light up your celebrations and ceremonies with elegance.",
+    image: "/images/Simple-Diya.jpg",
     featured: false,
-    category: "glass-candles",
+    category: "decor-candles",
   },
   {
     id: "p17",
-    name: "Velvet Amber",
-    price: 279,
-    description: "Warm amber hues meet velvety smooth wax in this refined creation.",
+    name: "Fancy Diya with Fragrances Pack of 2",
+    price: 130,
+    description: "Two beautifully decorated ceremonial clay diyas infused with delicate warm fragrances.",
     longDescription:
-      "Rich, warm, and endlessly elegant — Velvet Amber is a study in luxury minimalism. The amber-tinted wax glows beautifully when lit, casting a rich, golden light throughout the room.",
-    image: "/images/Candle_02.jpg",
+      "Celebrate festivals and special occasions with our Fancy Diya with Fragrances Pack of 2. Meticulously decorated by hand and infused with premium soothing scents, these decorative diyas combine festive visuals with aromatic luxury.",
+    image: "/images/Fancy_Diya_with_Fragrances.jpg",
     featured: false,
-    category: "glass-candles",
+    category: "decor-candles",
   },
   {
     id: "p18",
-    name: "Crystal Frost",
-    price: 319,
-    description: "A pristine white candle with a crystalline texture and cool fragrance.",
+    name: "Simple Diya with Colour Pack of 4",
+    price: 48,
+    description: "Four vibrant, hand-painted clay diyas to bring colorful warmth to your decor.",
     longDescription:
-      "Crystal Frost captures the quiet beauty of winter — a pure white candle with an icy crystalline finish and a fresh, clean fragrance of white musk and cool air.",
-    image: "/images/Candle_04.jpg",
+      "Add a splash of traditional joy to your home with our Simple Diya with Colour Pack of 4. Hand-painted in elegant festive tones, these clay diyas are perfect for creating custom rangolis, patios, or warm corner layouts.",
+    image: "/images/Simple_Diya_with_Colour.jpg",
     featured: false,
-    category: "glass-candles",
+    category: "decor-candles",
   },
   {
     id: "p19",
-    name: "Rose Serenity",
-    price: 329,
-    description: "Delicate rose-inspired candle crafted to evoke romance and calm.",
+    name: "Simple Diya with Flower & Fragrance Pack of 8",
+    price: 130,
+    description: "Eight floral-scented clay diyas decorated with delicate floral details.",
     longDescription:
-      "Rose Serenity is a timeless piece — a soft blush-hued candle with the most exquisite rose fragrance. Perfect for romantic evenings, meditation, or as a thoughtful gift for someone special.",
-    image: "/images/Candle_05.jpg",
+      "Infuse your space with floral serenity with our Simple Diya with Flower & Fragrance Pack of 8. Each traditional clay diya is blended with fresh floral essential oils, filling your home with an inviting spring aroma.",
+    image: "/images/SimpleDiyawithFlower&Fragrance.jpg",
     featured: false,
     category: "decor-candles",
   },
   {
     id: "p20",
-    name: "Midnight Bloom",
-    price: 449,
-    description: "A dramatic dark-hued candle that blooms beautifully in the night.",
+    name: "Heart/Small flower Tealight with Fragrance Pack of 9",
+    price: 49,
+    moq: 5,
+    description: "Nine adorable heart and flower-shaped scented tealight candles for romantic setups.",
     longDescription:
-      "Midnight Bloom is our most dramatic creation — deep plum and midnight blue tones with a complex floral-musk fragrance. This candle is designed to be the centrepiece of any evening atmosphere.",
-    image: "/images/Candle_06.jpg",
+      "Create a romantic, soft atmosphere with our Heart/Small flower Tealight with Fragrance Pack of 9. Featuring beautifully sculpted heart and flower shapes, these highly fragrant tealights burn cleanly and add a whimsical touch to any display.",
+    image: "/images/HeartSmallflower_TealightwithFragrance.jpg",
     featured: false,
     category: "decor-candles",
   },

@@ -16,7 +16,6 @@ import BulkOrders from "@/components/sections/BulkOrders";
 import PerfectFor from "@/components/sections/PerfectFor";
 import HowToOrder from "@/components/sections/HowToOrder";
 import Testimonials from "@/components/sections/Testimonials";
-import InstagramGallery from "@/components/sections/InstagramGallery";
 import Contact from "@/components/sections/Contact";
 
 // Modal — dynamic import for performance
@@ -63,9 +62,6 @@ export default function HomePage() {
 
         {/* 7. Testimonials — Customer review cards */}
         <Testimonials />
-
-        {/* 8. Instagram Gallery — Pinterest masonry layout */}
-        <InstagramGallery />
 
         {/* 9. Contact — Grand contact section */}
         <Contact />
