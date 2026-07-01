@@ -12,6 +12,7 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Collection from "@/components/sections/Collection";
+import BulkOrders from "@/components/sections/BulkOrders";
 import PerfectFor from "@/components/sections/PerfectFor";
 import HowToOrder from "@/components/sections/HowToOrder";
 import Testimonials from "@/components/sections/Testimonials";
@@ -50,6 +51,9 @@ export default function HomePage() {
 
         {/* 4. Featured Collection — Filterable luxury product grid */}
         <Collection onProductClick={setSelectedProduct} />
+
+        {/* 4b. Bulk Orders — Exclusive Bulk Order Offers */}
+        <BulkOrders />
 
         {/* 5. Perfect For — Occasions showcase */}
         <PerfectFor />

@@ -26,7 +26,7 @@ export default function Navbar() {
 
   // Track which section is in view
   useEffect(() => {
-    const sections = ["home", "about", "collection", "contact"];
+    const sections = ["home", "about", "collection", "bulk-orders", "contact"];
     const observers: IntersectionObserver[] = [];
 
     sections.forEach((id) => {
